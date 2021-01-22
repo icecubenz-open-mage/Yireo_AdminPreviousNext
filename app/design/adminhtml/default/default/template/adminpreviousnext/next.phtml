@@ -10,13 +10,32 @@
 
 $next = $this->getNext();
 ?>
-<script>
 <?php if(!empty($next)) : ?>
-var nextHtml = '<button type="button" class="back next" '
+<style>
+    button.forward {
+        color: #555;
+        background: none;
+    }
+    button.forward span {
+        background: none;
+        padding: 0;
+    }
+    button.forward:after {
+        content: "»";
+        padding-left: 4px;
+    }
+    button.forward:hover {
+        background: #888 !important;
+    }
+</style>
+<script>
+var nextHtml = '<button type="button" class="forward" '
     + 'title="<?php echo $next->getName(); ?>" '
     + 'onclick="setLocation(\'<?php echo $next->getUrl(); ?>\');">'
     + '<span><span><span><?php echo $next->getLabel(); ?></span></span></span>'
     + '</button>';
-$('p.form-buttons').insert({ after: nextHtml});
-<?php endif; ?>
+$$('p.form-buttons').each(function(buttons) {
+    buttons.insert({ bottom: nextHtml });
+});
 </script>
+<?php endif; ?>
