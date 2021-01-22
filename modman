@@ -1,5 +1,5 @@
 app/code/community/Yireo/AdminPreviousNext/                                        app/code/community/Yireo/AdminPreviousNext/
-app/design/adminhtml/default/default/layout/adminpreviousnext.xml                  app/design/adminhtml/default/default/layout/adminpreviousnext.xml/
+app/design/adminhtml/default/default/layout/adminpreviousnext.xml                  app/design/adminhtml/default/default/layout/adminpreviousnext.xml
 app/design/adminhtml/default/default/template/adminpreviousnext/next.phtml         app/design/adminhtml/default/default/template/adminpreviousnext/next.phtml
 app/design/adminhtml/default/default/template/adminpreviousnext/previous.phtml     app/design/adminhtml/default/default/template/adminpreviousnext/previous.phtml
 app/design/adminhtml/default/default/template/adminpreviousnext/script.phtml       app/design/adminhtml/default/default/template/adminpreviousnext/script.phtml

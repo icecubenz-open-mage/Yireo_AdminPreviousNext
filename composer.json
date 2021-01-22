@@ -3,7 +3,7 @@
     "license": "OSL-3.0",
     "type": "magento-module",
     "homepage": "https://github.com/icecubenz-open-mage/Icecube_AdminPreviousNext",
-    "description": "Adds a previous/next button on product-edit pages in the backend",
+    "description": "Adds a previous/next button on various view pages in the magento admin",
     "authors": [
         {
             "name": "Jisse Reitsma (Yireo)",
@@ -15,5 +15,8 @@
     ],
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
+    },
+    "replace": {
+        "yireo/magento1-adminpreviousnext": "*"
     }
 }

@@ -24,6 +24,30 @@
         </reference>
     </adminhtml_sales_order_view>
 
+    <adminhtml_sales_order_invoice_view>
+        <update handle="adminpreviousnext" />
+        <reference name="adminpreviousnext">
+            <block type="adminpreviousnext/order" name="adminpreviousnext.previous" template="adminpreviousnext/previous.phtml" />
+            <block type="adminpreviousnext/order" name="adminpreviousnext.next" template="adminpreviousnext/next.phtml" />
+        </reference>
+    </adminhtml_sales_order_invoice_view>
+
+    <adminhtml_sales_order_creditmemo_view>
+        <update handle="adminpreviousnext" />
+        <reference name="adminpreviousnext">
+            <block type="adminpreviousnext/order" name="adminpreviousnext.previous" template="adminpreviousnext/previous.phtml" />
+            <block type="adminpreviousnext/order" name="adminpreviousnext.next" template="adminpreviousnext/next.phtml" />
+        </reference>
+    </adminhtml_sales_order_creditmemo_view>
+
+    <adminhtml_sales_order_shipment_view>
+        <update handle="adminpreviousnext" />
+        <reference name="adminpreviousnext">
+            <block type="adminpreviousnext/order" name="adminpreviousnext.previous" template="adminpreviousnext/previous.phtml" />
+            <block type="adminpreviousnext/order" name="adminpreviousnext.next" template="adminpreviousnext/next.phtml" />
+        </reference>
+    </adminhtml_sales_order_shipment_view>
+
     <adminpreviousnext>
         <reference name="before_body_end">
             <block type="core/template" name="adminpreviousnext" template="adminpreviousnext/script.phtml" />
