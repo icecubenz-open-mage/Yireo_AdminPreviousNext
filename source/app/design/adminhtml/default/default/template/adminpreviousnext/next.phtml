@@ -1,6 +1,6 @@
 <?php
 /**
- * Yireo AdminPreviousNext for Magento 
+ * Yireo AdminPreviousNext for Magento
  *
  * @package     Yireo_AdminPreviousNext
  * @author      Yireo (http://www.yireo.com/)
@@ -17,6 +17,6 @@ var nextHtml = '<button type="button" class="back next" '
     + 'onclick="setLocation(\'<?php echo $next->getUrl(); ?>\');">'
     + '<span><span><span><?php echo $next->getLabel(); ?></span></span></span>'
     + '</button>';
-jQuery('p.form-buttons').append(nextHtml);
+$('p.form-buttons').insert({ after: nextHtml});
 <?php endif; ?>
 </script>

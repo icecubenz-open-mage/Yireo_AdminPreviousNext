@@ -1,30 +1,19 @@
 {
-    "name": "yireo/magento1-adminpreviousnext",
+    "name": "icecube/magento1-adminpreviousnext",
     "license": "OSL-3.0",
     "type": "magento-module",
-    "homepage": "https://www.yireo.com/software/magento-extensions/adminpreviousnext",
+    "homepage": "https://github.com/icecubenz-open-mage/Icecube_AdminPreviousNext",
     "description": "Adds a previous/next button on product-edit pages in the backend",
-    "keywords": ["composer-installer", "magento"],
     "authors": [
         {
             "name": "Jisse Reitsma (Yireo)",
             "email": "jisse@yireo.com"
+        },
+        {
+            "name": "Icecube"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
-    },
-    "require-dev":{
-        "phpunit/phpunit":"*",
-        "composer/composer":"*@dev"
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://packages.firegento.com"
-        }
-    ],
-    "extra":{
-        "magento-root-dir": "source/"
+        "magento-hackathon/magento-composer-installer": "*"
     }
 }

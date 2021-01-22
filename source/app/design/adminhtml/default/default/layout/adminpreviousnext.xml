@@ -25,15 +25,6 @@
     </adminhtml_sales_order_view>
 
     <adminpreviousnext>
-        <reference name="head">
-            <action method="addItem" ifconfig="adminpreviousnext/settings/load_jquery">
-                <type>skin_js</type><name>js/adminpreviousnext/jquery.js</name>
-            </action>
-            <action method="addItem">
-                <type>skin_css</type><name>css/adminpreviousnext/next.css</name>
-            </action>
-        </reference>
-
         <reference name="before_body_end">
             <block type="core/template" name="adminpreviousnext" template="adminpreviousnext/script.phtml" />
         </reference>
